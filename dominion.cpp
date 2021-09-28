@@ -63,7 +63,11 @@ constexpr int EMPTY = -1;
  */
 int main(int argc, char** argv) {
     // The game name and version of sdlandnet are displayed.
-    std::cout << '\n' << "Dominion by Chigozie Agomo." << "\n\n" << System::info() << '\n';
+    std::cout
+        << '\n' << "Dominion by Chigozie Agomo." << "\n\n" << System::info()
+        << "\n\nLeft click: deploy.\nRight click: expand (not twice in a row).\n"
+        << "Middle click: unite.\nEnter: view game info.\nR: restart.\n";
+    ;
     
     // The required sub-systems are initialised.
     System::initialise();
